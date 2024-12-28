@@ -88,5 +88,46 @@ If you decide to add a license later, choose a permissive license like MIT to en
 - Add a pinned issue or discussion explaining how people can get involved.
 
 ---
+# About Application
 
-Let me know if you need help creating any specific files or setting up the repository further!
+
+Ruto Application
+Ruto is a cutting-edge resume-building application built with .NET Core 8, designed to help users create professional resumes quickly and efficiently. The application follows Clean Architecture principles, ensuring modularity, scalability, and maintainability. By leveraging modern development practices, Ruto provides a seamless user experience for generating resumes tailored to individual needs.
+
+Features
+Resume Builder: Create and customize professional resumes with ease.
+Clean Architecture: Separation of concerns with clearly defined layers (Domain, Application, Infrastructure, Presentation).
+Template-Based Design: Offers multiple resume templates for users to choose from.
+Data Persistence: Saves user information and resume drafts for future editing.
+Modular Design: Easily extendable to add new features like cover letter generation or portfolio creation.
+Technologies Used
+.NET Core 8
+Entity Framework Core for database management.
+SQL Server or any other supported database.
+Dependency Injection for loosely coupled components.
+Clean Architecture Principles for a robust and maintainable codebase.
+Getting Started
+Clone the repository:
+
+
+git clone https://github.com/your-username/ruto-application.git
+cd ruto-application
+Configure the database connection string in appsettings.json or the environment configuration.
+
+Apply migrations and run the application:
+
+
+dotnet ef database update
+dotnet run
+Access the application through the user interface to start creating resumes.
+
+Project Structure
+Domain: Contains core business logic and entities, such as resume templates and user profiles.
+Application: Includes use cases, DTOs, and service interfaces for handling resume creation and customization.
+Infrastructure: Handles database access, repository implementations, and third-party integrations.
+Presentation: User-facing layer for interacting with the application (e.g., web or desktop UI).
+Contribution
+Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request for review.
+
+License
+This project is not licensed. All rights are reserved. If you wish to use this project, please contact the repository owner for permissions.

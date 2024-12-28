@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rutro.Presentation", "Rutro.Presentation\Rutro.Presentation.csproj", "{2FD251C3-300D-44DB-A49C-D96FB431C317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rutro.Infrastructure", "Rutro.Infrastructure\Rutro.Infrastructure.csproj", "{78A925D7-BA62-441F-8322-6C48B8819A80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rutro.Application", "Rutro.Application\Rutro.Application.csproj", "{F4F7BC5D-CA35-4601-BE8A-14CA8B25B6D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rutro.Domain", "Rutro.Domain\Rutro.Domain.csproj", "{099A03FC-6855-48D9-9FAC-B71B362F3183}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{34278D35-5E79-4BC6-84C0-A7F8260172B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{F3A4CB56-E2F6-4568-9261-069C6825412C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FD251C3-300D-44DB-A49C-D96FB431C317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD251C3-300D-44DB-A49C-D96FB431C317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD251C3-300D-44DB-A49C-D96FB431C317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD251C3-300D-44DB-A49C-D96FB431C317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A925D7-BA62-441F-8322-6C48B8819A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A925D7-BA62-441F-8322-6C48B8819A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A925D7-BA62-441F-8322-6C48B8819A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A925D7-BA62-441F-8322-6C48B8819A80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4F7BC5D-CA35-4601-BE8A-14CA8B25B6D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F7BC5D-CA35-4601-BE8A-14CA8B25B6D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F7BC5D-CA35-4601-BE8A-14CA8B25B6D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F7BC5D-CA35-4601-BE8A-14CA8B25B6D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{099A03FC-6855-48D9-9FAC-B71B362F3183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099A03FC-6855-48D9-9FAC-B71B362F3183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099A03FC-6855-48D9-9FAC-B71B362F3183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099A03FC-6855-48D9-9FAC-B71B362F3183}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2FD251C3-300D-44DB-A49C-D96FB431C317} = {34278D35-5E79-4BC6-84C0-A7F8260172B6}
+		{78A925D7-BA62-441F-8322-6C48B8819A80} = {34278D35-5E79-4BC6-84C0-A7F8260172B6}
+		{F4F7BC5D-CA35-4601-BE8A-14CA8B25B6D4} = {34278D35-5E79-4BC6-84C0-A7F8260172B6}
+		{099A03FC-6855-48D9-9FAC-B71B362F3183} = {34278D35-5E79-4BC6-84C0-A7F8260172B6}
+	EndGlobalSection
+EndGlobal

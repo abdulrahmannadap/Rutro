@@ -91,11 +91,11 @@ If you decide to add a license later, choose a permissive license like MIT to en
 # About Application
 
 
-Ruto Application
+**Ruto Application**
 Ruto is a cutting-edge resume-building application built with .NET Core 8, designed to help users create professional resumes quickly and efficiently. The application follows Clean Architecture principles, ensuring modularity, scalability, and maintainability. By leveraging modern development practices, Ruto provides a seamless user experience for generating resumes tailored to individual needs.
 
-Features
-Resume Builder: Create and customize professional resumes with ease.
+**Features
+Resume Builder:** Create and customize professional resumes with ease.
 Clean Architecture: Separation of concerns with clearly defined layers (Domain, Application, Infrastructure, Presentation).
 Template-Based Design: Offers multiple resume templates for users to choose from.
 Data Persistence: Saves user information and resume drafts for future editing.
@@ -107,22 +107,22 @@ SQL Server or any other supported database.
 Dependency Injection for loosely coupled components.
 Clean Architecture Principles for a robust and maintainable codebase.
 Getting Started
-Clone the repository:
+**Clone the repository:**
 
 
 git clone https://github.com/your-username/ruto-application.git
-cd ruto-application
+**cd ruto-application**
 Configure the database connection string in appsettings.json or the environment configuration.
 
-Apply migrations and run the application:
+**Apply migrations and run the application:**
 
 
-dotnet ef database update
-dotnet run
+**dotnet ef database update**
+**dotnet run**
 Access the application through the user interface to start creating resumes.
 
-Project Structure
-Domain: Contains core business logic and entities, such as resume templates and user profiles.
+**Project Structure**
+**Domain:** Contains core business logic and entities, such as resume templates and user profiles.
 Application: Includes use cases, DTOs, and service interfaces for handling resume creation and customization.
 Infrastructure: Handles database access, repository implementations, and third-party integrations.
 Presentation: User-facing layer for interacting with the application (e.g., web or desktop UI).

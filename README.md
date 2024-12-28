@@ -67,7 +67,7 @@ Include detailed instructions in the `README.md` file to help contributors set u
 ---
 
 ### 5. **Add a Code of Conduct**
-Include a `CODE_OF_CONDUCT.md` file to set the tone for collaboration. GitHub provides a [Code of Conduct template](https://github.com/github/opensource.guide/blob/main/CODE_OF_CONDUCT.md).
+Include a `CODE_OF_CONDUCT.md` file to set the tone for collaboration. GitHub provides a [Code of Conduct template].
 
 ---
 

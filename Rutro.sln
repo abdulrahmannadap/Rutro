@@ -14,6 +14,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{34278D35-5E79-4BC6-84C0-A7F8260172B6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{F3A4CB56-E2F6-4568-9261-069C6825412C}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\abdul\OneDrive\Documents\-- Create Table In SQL.txt = C:\Users\abdul\OneDrive\Documents\-- Create Table In SQL.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

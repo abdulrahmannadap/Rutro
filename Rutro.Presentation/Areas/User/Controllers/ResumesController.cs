@@ -5,7 +5,8 @@ namespace Rutro.Presentation.Areas.User.Controllers;
 [Area(nameof(User))]
 public class ResumesController : Controller
 {
-    public IActionResult Index()
+    [HttpGet]
+    public IActionResult Create()
     {
         return View();
     }

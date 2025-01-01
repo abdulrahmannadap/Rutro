@@ -1,0 +1,263 @@
+﻿@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_User.cshtml";
+}
+
+
+<div class="container mt-5">
+    <!-- Progress bar -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-12 col-lg-10">
+            <div class="position-relative">
+                <div class="progress" style="height: 3px;">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 0%;" id="formProgress"></div>
+                </div>
+                <div class="position-absolute top-0 start-0 translate-middle-y w-100 d-flex justify-content-between" style="margin-top: 1.5px;">
+                    <button class="btn btn-sm btn-primary rounded-circle step-indicator active" style="width: 30px; height: 30px;" disabled>1</button>
+                    <button class="btn btn-sm btn-secondary rounded-circle step-indicator" style="width: 30px; height: 30px;" disabled>2</button>
+                    <button class="btn btn-sm btn-secondary rounded-circle step-indicator" style="width: 30px; height: 30px;" disabled>3</button>
+                    <button class="btn btn-sm btn-secondary rounded-circle step-indicator" style="width: 30px; height: 30px;" disabled>4</button>
+                    <button class="btn btn-sm btn-secondary rounded-circle step-indicator" style="width: 30px; height: 30px;" disabled>5</button>
+                    <button class="btn btn-sm btn-secondary rounded-circle step-indicator" style="width: 30px; height: 30px;" disabled>6</button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+                <small class="text-primary fw-bold">Personal</small>
+                <small class="text-secondary">Academic</small>
+                <small class="text-secondary">Contact</small>
+                <small class="text-secondary">Experience</small>
+                <small class="text-secondary">Skills</small>
+                <small class="text-secondary">Social</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+            <form id="multiStepForm" class="needs-validation" novalidate>
+                <div class="step active" id="step1">
+                    <div class="card border-primary shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Personal Details</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" name="fullName" required>
+                                <div class="invalid-feedback">Please provide your full name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fatherName" class="form-label">Father's Name</label>
+                                <input type="text" class="form-control" id="fatherName" name="fatherName" required>
+                                <div class="invalid-feedback">Please provide your father's name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="dob" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="dob" name="dob" required>
+                                <div class="invalid-feedback">Please select your date of birth.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="placeOfBirth" class="form-label">Place of Birth</label>
+                                <input type="text" class="form-control" id="placeOfBirth" name="placeOfBirth" required>
+                                <div class="invalid-feedback">Please provide your place of birth.</div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary" id="next1">Next <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step" id="step2">
+                    <div class="card border-primary shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Academic Credentials</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="acdType" class="form-label">Academic Type</label>
+                                <select class="form-control" id="acdType" name="acdType" required>
+                                    <option value="School">School</option>
+                                    <option value="College">College</option>
+                                    <option value="University">University</option>
+                                </select>
+                                <div class="invalid-feedback">Please select an academic type.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="acdStartingYear" class="form-label">Starting Year</label>
+                                <input type="number" class="form-control" id="acdStartingYear" name="acdStartingYear" required>
+                                <div class="invalid-feedback">Please provide a starting year.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="acdEndYear" class="form-label">End Year</label>
+                                <input type="number" class="form-control" id="acdEndYear" name="acdEndYear" required>
+                                <div class="invalid-feedback">Please provide an end year.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="acdPercentage" class="form-label">Percentage</label>
+                                <input type="number" class="form-control" id="acdPercentage" name="acdPercentage" required>
+                                <div class="invalid-feedback">Please provide a percentage.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="acdAddress" class="form-label">Institution Address</label>
+                                <input type="text" class="form-control" id="acdAddress" name="acdAddress" required>
+                                <div class="invalid-feedback">Please provide the institution's address.</div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" id="prev2"><i class="bi bi-arrow-left"></i> Previous</button>
+                            <button type="button" class="btn btn-primary" id="next2">Next <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="card border-primary shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Contact Details</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="contPhone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="contPhone" name="contPhone" required>
+                                <div class="invalid-feedback">Please provide a phone number.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contGmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="contGmail" name="contGmail" required>
+                                <div class="invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="contAddress" name="contAddress" required>
+                                <div class="invalid-feedback">Please provide your address.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contDesignation" class="form-label">Designation</label>
+                                <input type="text" class="form-control" id="contDesignation" name="contDesignation" required>
+                                <div class="invalid-feedback">Please provide your designation.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contSynopsis" class="form-label">Synopsis</label>
+                                <input type="text" class="form-control" id="contSynopsis" name="contSynopsis" required>
+                                <div class="invalid-feedback">Please provide a synopsis.</div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" id="prev3"><i class="bi bi-arrow-left"></i> Previous</button>
+                            <button type="button" class="btn btn-primary" id="next3">Next <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step" id="step4">
+                    <div class="card border-primary shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Professional Experience</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="companyName" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" id="companyName" name="companyName" required>
+                                <div class="invalid-feedback">Please provide the company name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="designation" class="form-label">Designation</label>
+                                <input type="text" class="form-control" id="designation" name="designation" required>
+                                <div class="invalid-feedback">Please provide your designation.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="duration" class="form-label">Duration</label>
+                                <input type="text" class="form-control" id="duration" name="duration" required>
+                                <div class="invalid-feedback">Please provide the duration.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="project" class="form-label">Project</label>
+                                <input type="text" class="form-control" id="project" name="project" required>
+                                <div class="invalid-feedback">Please provide the project name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="technologies" class="form-label">Technologies</label>
+                                <input type="text" class="form-control" id="technologies" name="technologies" required>
+                                <div class="invalid-feedback">Please provide the technologies used.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="projectDescription" class="form-label">Project Description</label>
+                                <input type="text" class="form-control" id="projectDescription" name="projectDescription" required>
+                                <div class="invalid-feedback">Please provide the project description.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="projectResponsibilities" class="form-label">Project Responsibilities</label>
+                                <input type="text" class="form-control" id="projectResponsibilities" name="projectResponsibilities" required>
+                                <div class="invalid-feedback">Please provide the project responsibilities.</div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" id="prev4"><i class="bi bi-arrow-left"></i> Previous</button>
+                            <button type="button" class="btn btn-primary" id="next4">Next <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step" id="step5">
+                    <div class="card border-primary shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Skills</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="skiName" class="form-label">Skill Name</label>
+                                <input type="text" class="form-control" id="skiName" name="skiName" required>
+                                <div class="invalid-feedback">Please provide the skill name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="skiStype" class="form-label">Skill Type</label>
+                                <input type="text" class="form-control" id="skiStype" name="skiStype" required>
+                                <div class="invalid-feedback">Please provide the skill type.</div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" id="prev5"><i class="bi bi-arrow-left"></i> Previous</button>
+                            <button type="button" class="btn btn-primary" id="next5">Next <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step" id="step6">
+                    <div class="card border-primary shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Social Media</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="gitHub" class="form-label">GitHub</label>
+                                <input type="url" class="form-control" id="gitHub" name="gitHub" required>
+                                <div class="invalid-feedback">Please provide a valid GitHub URL.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="linkedin" class="form-label">LinkedIn</label>
+                                <input type="url" class="form-control" id="linkedin" name="linkedin" required>
+                                <div class="invalid-feedback">Please provide a valid LinkedIn URL.</div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" id="prev6"><i class="bi bi-arrow-left"></i> Previous</button>
+                            <button type="submit" class="btn btn-success"><i class="bi bi-check-lg"></i> Submit</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+  
+
+   <script type="text/javascript">
+    
+    </script>
+
+
+    <!-- Add Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+}
+
+
+
